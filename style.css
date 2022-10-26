@@ -1,0 +1,112 @@
+body{
+    background-image: url(images/chuttersnap-JChRnikx0tM-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.div-title{
+    background-color: white;
+    height: 5%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0.16603538393974304px 0.7471592426300049px rgba(0, 0, 0, 0.13), 0px 0.3990061283111572px 1.7955275774002075px rgba(0, 0, 0, 0.19), 0px 0.7512931227684021px 3.380819082260132px rgba(0, 0, 0, 0.23), 0px 1.3401784896850586px 6.030803203582764px rgba(0, 0, 0, 0.28), 0px 2.5066566467285156px 11.27995491027832px rgba(0, 0, 0, 0.34), 0px 6px 27px rgba(0, 0, 0, 0.47);
+}
+
+h1{
+    font-family: Arial;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 42px;
+    letter-spacing: 0.11em;
+    text-align: center;
+    color: #d87d98;
+}
+
+.form{
+    height: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; 
+    transition: height 0.8s ease-out;
+}
+
+.form .search-input, .button{
+    height:12%;
+    box-shadow: 0px 0.996212363243103px 2.2138051986694336px rgba(0, 0, 0, 0.1), 0px 2.3940367698669434px 5.32008171081543px rgba(0, 0, 0, 0.14), 0px 4.507758617401123px 10.017241477966309px rgba(0, 0, 0, 0.17), 0px 8.041070938110352px 17.869047164916992px rgba(0, 0, 0, 0.2), 0px 15.039938926696777px 33.422088623046875px rgba(0, 0, 0, 0.24), 0px 36px 80px rgba(0, 0, 0, 0.34);
+}
+
+.form .search-input{
+    width: 40%;
+    border-radius: 1000px 0px 0px 1000px;
+    border: none;
+    background: #ffffff;
+    padding-left: 4rem;
+    font-size: 20px;
+    outline: none;
+}
+
+.form .search-input::placeholder{
+    margin: auto;
+    color: rgba(128, 128, 128, 0.395);
+}
+
+.form .button{
+    width: 7%;
+    border-radius: 0px 1000px 1000px 0px;
+    border: none;
+    background-color: #d87d98;
+    background-image: url(images/search-icon.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 2.5rem;
+}
+
+.form .button:hover{
+    cursor: pointer;
+    background-color:#d87d98c3;
+}
+
+.age-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+/*  Javascript  */
+
+
+.form.active{
+    flex: 3;
+}
+
+.body.active{
+    background-image: url(images/chuttersnap-JChRnikx0tM-unsplash1-transparent.png);
+}
+
+.age-container{
+    flex: 1;
+    animation:flexanimation 1s ease-out 1s infinite alternate backwards; 
+}
+
+.age{
+    display: none;
+    font-size: 4rem;
+    color: #d87d98;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-shadow: 7px 7px 10px rgba(0, 0, 0, 0.25);
+} 
